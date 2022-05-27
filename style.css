@@ -43,16 +43,27 @@
 
 .header {
   background-color: var(--header-bg);
-  padding: 6em 6em 2em 2em;
+  padding: 5em 6em 2em 2em;
   margin: 0;
 }
 
 form {
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  z-index: 10;
+}
+
+.second-sec {
   padding: 2em;
+  position: relative;
   box-shadow: rgb(60 64 67 / 0%) 0px 1px 2px 0px, rgb(29 64 67 / 8%) 28px 2px 6px 2px;
-  gap: 1em;
+  background-color: seashell;
+}
+
+.second-sec > h3 {
+  padding-bottom: 1em;
 }
 label {
   display: block;
@@ -92,6 +103,14 @@ div label {
   padding: 0.5em 1.5em;
   border: none;
 }
+.create-account:hover {
+  cursor: pointer;
+}
+.create-account:active {
+  background-color: #b15041;
+  box-shadow: rgb(60 64 67 / 0%) -3px 2px 4px 2px, inset rgb(29 64 67 / 8%) -1px 1px 8px 1px;
+  transform: translateY(4px);
+}
 
 .third-sec {
   padding: 2em;
@@ -99,7 +118,7 @@ div label {
 }
 
 .third-sec p {
-  padding: 20px 0;
+  padding-top: 1em;
   font-size: 1em;
 }
 
@@ -120,7 +139,7 @@ p > a {
   color: white;
   display: flex;
   justify-content: center;
-  margin-top: 26em;
+  margin-top: 22em;
 }
 
 .img-side p > a {
@@ -131,3 +150,7 @@ p > a {
 .image-credit > p {
   font-size: 0.8em;
 }
+
+/* input:invalid {
+  border-color: red;
+} */

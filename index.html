@@ -23,58 +23,63 @@
           </p>
         </div>
       </div>
-      <div class="form-side first-sec">
-        <h3 class="header">
-          This is not a real online service! You know you need something<br />
-          this in your life to help you realize your deepest dreams.
-          <br />
-          Sign up <em>now</em> to get started
-          <br />
-          <br />
-          <br />
-          You know you want to.
-        </h3>
+      <div class="form-side">
+        <div class="first-sec">
+          <h3 class="header">
+            This is not a real online service! You know you need something<br />
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started
+            <br />
+            <br />
+            <br />
+            You know you want to.
+          </h3>
+        </div>
 
-        <form class="second-sec" action="">
-          <h3>Lets do this!</h3>
-          <div class="form-container">
-            <div class="input-group">
-              <div>
-                <label for="fname">First name</label>
-                <input type="text" id="fname" name="fname" />
-              </div>
-              <div>
-                <label for="lname">Last name</label>
-                <input type="text" id="lname" name="sname" />
-              </div>
-            </div>
-            <div class="input-group">
-              <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" />
-              </div>
-              <div>
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="email" />
-              </div>
-            </div>
-            <div class="input-group">
-              <div>
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password" />
-              </div>
-              <div>
-                <label for="cpassword">Confirm Password</label>
-                <input type="text" id="cpassword" name="cpassword" />
-              </div>
-            </div>
-          </div>
-        </form>
-        <div class="third-sec">
-          <button class="create-account">Create Account</button>
-          <p>Already have an account? <a href="http://">Log in</a></p>
+        <form  action="#" method="get">
+  <div class="second-sec">
+    
+    <h3>Lets do this!</h3>
+    <div class="form-container">
+      <div class="input-group">
+        <div>
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" required minlength="2" />
+        </div>
+        <div>
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="sname" required minlength="2"/>
         </div>
       </div>
+      <div class="input-group">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="email" required min="10" />
+        </div>
+      </div>
+      <div class="input-group">
+        <div>
+          <label for="password">Password</label>
+          <input type="password" patttern=""id="password" name="password" required minlength="8" />
+        </div>
+        <div>
+          <label for="cpassword">Confirm Password</label>
+          <input type="text" id="cpassword" name="cpassword" required minlength="6" />
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="third-sec">
+          <button class="create-account" type="submit">Create Account</button>
+        </form>
+          <p>Already have an account? <a href="http://">Log in</a></p>
+        </div>
+      </>
     </div>
   </body>
 </html>
