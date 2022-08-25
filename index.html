@@ -12,9 +12,8 @@
   <body>
     <div class="main-content">
       <div class="img-side">
-
-          <img id="odin" src="images/odin-lined.png" alt="" />
-
+        <div class="banner-box">
+          <img id="odin" src="/images/odin-lined.png" alt="" />
           <p>ODIN</p>
         </div>
         <div class="image-credit">
@@ -38,7 +37,7 @@
           </h3>
         </div>
 
-        <form  action="#" method="get">
+        <form  action="#" method="get" novalidate>
   <div class="second-sec">
     
     <h3>Lets do this!</h3>
@@ -57,6 +56,7 @@
         <div>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <label for="phone">Phone Number</label>
@@ -80,7 +80,7 @@
         </form>
           <p>Already have an account? <a href="http://">Log in</a></p>
         </div>
-      </>
+      
     </div>
   </body>
 </html>
