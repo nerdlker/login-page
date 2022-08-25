@@ -9,6 +9,7 @@ submitButton.forEach((button) => {
     if (password.value === cpassword.value && password.value !== "") {
       console.log("passwords Match");
       password.classList.remove("passworderror");
+      cpassword.classList.remove("passworderror");
     } else {
       console.log("passwords DO NOT match");
       cpassword.classList.add("passworderror");
