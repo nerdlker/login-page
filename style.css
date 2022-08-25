@@ -18,7 +18,7 @@
   /* display: flex; */
   /* flex-direction: column; */
   flex: 1;
-  background: url('/images/photo-1512719994953-eabf50895df7.avif') no-repeat;
+  background: url('login-page/images/photo-1512719994953-eabf50895df7.avif') no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: space-around;
