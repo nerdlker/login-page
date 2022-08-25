@@ -164,3 +164,10 @@ input:invalid {
 .passworderror {
   border: 1px solid red;
 }
+
+.passwordmatch {
+  color: red;
+  padding: 0.3em;
+  font-size: 0.8rem;
+  visibility: hidden;
+}

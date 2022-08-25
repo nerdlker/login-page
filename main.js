@@ -2,6 +2,7 @@ const password = document.querySelector("#password");
 const cpassword = document.querySelector("#cpassword");
 const submitButton = document.querySelectorAll(".create-account");
 const email = document.getElementById("email");
+const passwordmatch = document.querySelector(".passwordmatch");
 
 submitButton.forEach((button) => {
   button.addEventListener("click", (event) => {
@@ -10,11 +11,13 @@ submitButton.forEach((button) => {
       console.log("passwords Match");
       password.classList.remove("passworderror");
       cpassword.classList.remove("passworderror");
+      passwordmatch.style.visibility = "hidden";
     } else {
+      event.preventDefault();
       console.log("passwords DO NOT match");
       cpassword.classList.add("passworderror");
       password.classList.add("passworderror");
-      event.preventDefault();
+      passwordmatch.style.visibility = "visible";
     }
   });
 });
